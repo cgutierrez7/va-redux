@@ -38,7 +38,15 @@ describe('dedux', () => {
 
       it(`dispatch should take any dispatched action and run it 
           through the reducer function to produce a new state.`, () => {
-        const reducer = () => {} // Your reducer function here!
+        // Your reducer function here!
+        const reducer = (state = { foo: 'bar' }, action = {}) => {
+          switch (action.type) {
+            case 'BAZIFY':
+              return {...state, foo: 'baz'}
+            default:
+              return state
+          }  
+        }
 
         const store = createStore(reducer)
 
@@ -97,6 +105,8 @@ describe('dedux', () => {
       })
     })
   })
+
+  // Add tests for up, down, and reset
 
   describe.skip('applyMiddleware', () => {
     // Don't start this until you've completed part 2 of the challenge
