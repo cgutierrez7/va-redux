@@ -19,7 +19,7 @@ function createStore(reducer) {
   /** Returns state */
   store.getState = () => state
 
-  /** Dispatches actions to change state*/
+  /** Dispatches state change actions*/
   store.dispatch = (action) => {
 
     if (typeof action.type !== 'string') {
