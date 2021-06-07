@@ -44,4 +44,11 @@ function createStore(reducer) {
   return store
 }
 
-function applyMiddleware() {}
+function applyMiddleware(store, middlewares) {
+  let dispatch = store.dispatch
+  middlewares.forEach(middleware => {
+    dispatch = middleware(store)(dispatch)
+  })
+  store.dispatch = dispatch
+  return store
+}

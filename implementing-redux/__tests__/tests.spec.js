@@ -108,7 +108,7 @@ describe('dedux', () => {
 
   // Add tests for up, down, and reset
 
-  describe.skip('applyMiddleware', () => {
+  describe('applyMiddleware', () => {
     // Don't start this until you've completed part 2 of the challenge
     it('can apply middleware to dispatched actions', () => {
       const reducer = () => null
