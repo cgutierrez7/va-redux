@@ -9,15 +9,15 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
     "@types/jest": "^24.9.1",
-    "babel-eslint": "^10.0.3",
-    "babel-jest": "^25.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.5.1",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "jest": "^25.1.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^25.5.4",
     "prettier": "^1.19.1"
   }
 }
